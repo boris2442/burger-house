@@ -469,7 +469,7 @@ padding-bottom: 40px;
 .child-form{
     gap:20px;
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
 }
 
 
@@ -558,11 +558,7 @@ justify-content: center;
         justify-content: center;
         align-items: center;
     }
-    .already-text{
-        /* margin-top: 100px; */
-        /* padding-top: 20px; */
-        margin-left: 200px;
-    }
+    
    
         #fifth-section .img3{
             left: 10%;
@@ -630,14 +626,10 @@ justify-content: center;
 
     }
     }
-    @media screen and (max-width:900px){
-        /* .circle{
-          position: absolute;
-          right: 20px;
-        }
-        header{
-            position: relative;
-        } */
+    @media screen and (max-width:1050px){
+       .child-form{
+        flex-direction: column;
+       }
     }
     @media screen and (max-width:730px){
         #home h4 .text{
