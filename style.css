@@ -1,0 +1,662 @@
+/* ############initialisation des couleurs######3 */
+
+:root{
+    --color1:#fff;
+    --color2:black;
+    --color3:#47240A;
+    --color4:#F3C456;
+    --color5:#F70000;
+
+}
+
+/* ##############initialisation du code########### */
+*{
+    padding: 0;
+    margin: 0;
+   box-sizing: border-box;
+   scroll-behavior: smooth;
+   text-decoration: none;
+   outline: none;
+}
+html, body{
+    overflow-x: hidden;
+    padding-bottom: 20px;
+}
+
+button{
+    text-transform: uppercase;
+    background-color: var(--color3);
+    padding: 8px 15px;
+    font-size: 1.3rem;
+    cursor: pointer;
+    border: none;
+    font-family:"Parkinsans", Arial, Helvetica, sans-serif;
+    color:var(--color1);
+}
+
+/* ##########partie consacrée au header####### */
+header{
+    display: flex;
+    height: 15vh;
+    padding-right: 50px;
+    padding-left: 50px;
+    justify-content: space-between;
+    align-items: center;
+
+    background-image: url("/medias/images/background/bg-food.jpg");
+    background-position: center;
+    background-repeat:no-repeat ;
+    background-size: cover;
+    font-family: "Parkinsans", Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+}
+header img{
+    z-index: 10;
+}
+header .menu1{
+    display: flex;
+    align-items: center;
+ gap:20px;
+}
+header .menu1 img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+header .menu2{
+    display: flex;
+    gap:25px;
+    align-items: center;
+    justify-content: center;
+}
+header .menu1 h2{
+    font-weight: 600;
+    font-size: 1.6rem;
+}
+header .menu2 img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;  
+}
+header .menu2 h3{
+    font-size: 1.1rem;
+}
+
+ .btn{
+   background:rgba(255, 247, 0, 0.455);
+font-size: 1.3rem;
+   border: 1px solid var(--color4);
+   border: none;
+    font-family:"Parkinsans", Arial, Helvetica, sans-serif;
+    padding: 8px 15px;
+    color:var(--color1);
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.btn1{
+    text-transform: uppercase;
+    background-color: var(--color3);
+    padding: 8px 15px;
+    font-size: 1.3rem;
+    border: none;
+    font-family:"Parkinsans", Arial, Helvetica, sans-serif;
+    color:var(--color1);
+}
+
+/* ##########partie consacrée a la section home####### */
+section#home{
+   min-height: 100vh;
+    position: relative;
+    background-image: url("/medias/images/background/bg-food.jpg");
+    background-position: center;
+    background-repeat:no-repeat ;
+    background-size: cover;
+    padding: 0 30px;
+}
+section .buton{
+    position: absolute;
+    right: 5%;
+    top: 1%;
+}
+#home h4{
+    text-transform: uppercase;
+    font-size: 1.26rem;
+    padding-top: 80px;
+    font-family:"Parkinsans", Arial, Helvetica, sans-serif;
+    color:var(--color3);
+}
+#home h4 .text{
+    border: 2px dashed var(--color3);
+    border-radius: 7px;
+    padding: 6px;
+
+}
+#home h1{
+    font-size: clamp(40px, 10vw, 70px);
+    text-transform: uppercase;
+    color:var(--color3);
+    font-weight: 900;
+    padding-top: 20px;
+}
+#home h2{
+
+text-transform: uppercase;
+ color:var(--color3);
+ font-size: clamp(30px, 6vw, 50px);
+    font-weight: 900;
+  
+}
+#home .content{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+
+#home .content div img{
+    width: 600px;
+}
+#home .content div .circle{
+    height: 200px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    top:60%;
+    right:40%;
+    background-color: var(--color5);
+    border-radius: 50%;
+    position: absolute;
+}
+#home .content  .prix{
+    width: 80%;
+    text-align: center;
+    height: 80%;
+    font-family:"Parkinsans", Arial, Helvetica, sans-serif;
+    color:var(--color1);
+    right: 10%;
+    top:09%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    display: flex;
+    position: absolute;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    border: 2px dashed var(--color1);
+}
+
+
+/* ###33333second section#####33 */
+#second-section{
+    /* min-height: 90vh; */
+    padding-top: 30px;
+    color:var(--color1);
+    font-family:"Parkinsans", Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+}
+section .contener{
+    width: 90%;
+  margin: 0 auto;
+  gap:10px;
+  flex-wrap: wrap;
+  position: relative;
+justify-content: space-between;
+display: flex;
+}
+section .contener img{
+    border-radius: 7px;
+}
+.contener-box{
+    height: 500px;
+}
+.img-content{
+    width: 100%;
+ 
+}
+.box1{
+  
+    position: absolute;
+    top: 20%;
+    left: 8%;
+}
+.box1 h4{
+    font-size: 1.3rem;
+    padding-bottom: 7px;
+}
+.box1 h3{
+    font-size: 1.8rem;
+}
+.parent2{
+    position: relative;
+}
+.text2{
+    position: absolute;
+    top: 10%;
+    left:10%;
+}
+.text2 h4{
+    font-size: 1.3rem;
+    padding-bottom: 7px;
+
+}
+.text2 h3{
+    font-size: 1.8rem;   
+}
+.child-contener-box{
+    display: flex;
+  
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap:20px;
+}
+
+
+#third-section{
+    padding-top: 300px;
+    font-family:"Parkinsans", Arial, Helvetica, sans-serif;
+}
+#third-section .already-text{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+}
+#third-section .already-text span{
+    background-color: var(--color4);
+    padding: 10px;
+    font-weight: bold;
+    color:var(--color3);
+
+}
+#third-section h2{
+    text-transform: uppercase;
+    text-align: center;
+    font-family: serif;
+    
+    color:var(--color3);
+    padding: 30px;
+    
+    font-size: clamp(30px, 6vw, 50px);
+       font-weight: 900; 
+}
+#third-section .para{
+text-align: center;
+line-height: 30px;
+}
+#third-section .contain{
+  display: flex;
+  justify-content: center;
+  gap:20px;
+  margin: 0 auto;
+  text-align: center;
+  flex-wrap: wrap;
+  padding-top: 20px;
+
+  
+}
+#third-section .contain .box-2{
+    width: 400px;
+    padding: 20px;
+    height: 500px;
+
+}
+#third-section .contain div{
+    margin: 0 auto;
+}
+#third-section .contain .box-2 img{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+    object-position: center;
+    box-shadow: 0px 3px 5px  var(--color3);
+}
+#third-section .contain .box-2 h4{
+    font-size: 1.6rem;
+    padding: 15px 10px;
+    color:var(--color3);
+
+}
+#third-section .contain .box-2 p{
+    line-height: 30px;
+}
+#third-section .contain .box-2 button{
+    margin: 0 auto;
+    margin-top: 20px;
+    text-align: center;
+    align-items: center;
+    font-weight: 900;
+    justify-content: center;
+    font-family: serif;
+    background-color: var(--color5);
+}
+
+/* ##########fourth-section#333333 */
+
+
+
+#fourth-section .contenaire{
+display: flex;
+font-family:"Parkinsans", Arial, Helvetica, sans-serif;
+padding: 40px 30px;
+gap:30px;
+margin: 0 auto;
+height: auto;
+padding-top: 100px;
+box-shadow: 0px 2px 5px var(--color2);
+width: 90%;
+justify-content: space-between;
+}
+#fourth-section .contenaire div{
+    justify-content: center;
+    position: relative;
+    align-items: center;
+}
+#fourth-section .contenaire div img{
+    width: 500px;
+}
+#fourth-section .contenaire div p{
+    font-size: 1.3rem;
+}
+#fourth-section h3{
+text-align: center;
+font-size: 1.5rem;
+text-transform: uppercase;
+}
+#fourth-section h2{
+    text-transform: uppercase;
+    text-align: center;
+    font-family: serif;
+    
+    color:var(--color3);
+    padding: 20px;
+    
+    font-size: clamp(20px, 5vw, 45px);
+       font-weight: 900; 
+}
+#fourth-section p{
+    line-height: 33px;
+    height: 30px;
+    /* overflow: auto; */
+    text-align: center;
+}
+#fourth-section .contenaire div .circle2{
+    display: flex;
+    gap:30px;
+    position: absolute;
+    text-align: left;
+    padding-top: 50px;
+}
+#fourth-section .contenaire div .circle2 .child-circle{
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    background-color: red;
+}
+#fourth-section .contenaire div .circle2 .child-circle:nth-child(1){
+    background-color: #ffbe2a;
+}
+#fourth-section .contenaire div .circle2 .child-circle:nth-child(2), #fourth-section .contenaire div .circle2 .child-circle:nth-child(3) {
+background-color: #e1dfdb;
+}
+
+
+/* ###########fifthsection########3 */
+#fifth-section{
+    position: relative;
+    width: 100%;
+    padding-top:190px;
+    font-family:"Parkinsans", Arial, Helvetica, sans-serif;
+}
+#fifth-section h3{
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.6rem;
+    padding-bottom: 30px;
+    padding-top: 40px;
+}
+#fifth-section h2{
+    text-transform: uppercase;
+    text-align: center;
+    color:var(--color3);
+    font-size: clamp(20px, 5vw, 45px);
+       font-weight: 900; 
+    font-family: serif;
+}
+#fifth-section form{
+    display: flex;
+    padding-top: 50px;
+    margin: 0 auto;
+    margin-top: 40px;
+    align-items: center;
+    gap:50px;
+    row-gap: 20px;
+    justify-content: center;
+width: 90%;
+padding-bottom: 40px;
+    flex-direction: column;
+}
+#fifth-section form input{
+    padding: 10px;
+    margin-right: 10px;
+    width: 350px;
+    text-transform: uppercase;
+    height: 50px;
+}
+#fifth-section form input[type="submit"]{
+    background-color: var(--color5);
+    color:var(--color1);
+    font-size: 1.4rem;
+    text-transform: uppercase;
+       font-weight: 900; 
+    font-family: serif;
+    border: none;
+}
+#fifth-section .img1{
+    position: absolute;
+    top: 10%;
+}
+#fifth-section .img2{
+    right: 5%;
+    top:70%;
+    position: absolute;
+}
+#fifth-section .img3{
+    left: 17%;
+    top:60%;
+    cursor: pointer;
+    position: absolute;
+}
+.child-form{
+    gap:20px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/*############ section footer############## */
+footer{
+    width: 90%;
+    font-family:"Parkinsans", Arial, Helvetica, sans-serif;
+    
+    padding-bottom: 200px;
+    padding-left: 30px;
+    color:var(--color1);
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding-top: 30px;
+    background-image: url("/medias/images/background/bg-footer.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0 auto;
+}
+
+.foot-div{
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 1.7rem;
+    color:var(--color1);
+
+}
+footer p{
+    line-height: 33px;
+}
+footer img{
+    background-color: var(--color1);
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+footer .parents-footer{
+    display: flex;
+    padding-right: 20px;
+    justify-content: space-between;
+    gap:20px;
+    align-items: center;
+}
+footer .parents-footer i{
+    padding-right: 10px;
+    font-size: 2rem;
+}
+footer .child-footer p{
+    line-height: 50px;
+}
+footer .icone{
+    display: flex;
+    position: absolute;
+   right: 10%;
+   top: 50%;
+ gap:30px;
+   font-size: 2rem;
+   color:var(--color1);
+  
+}
+
+footer .copy{
+    text-transform: uppercase;
+    padding-top: 50px;
+    font-size: 1.3rem;
+}
+
+
+
+/* ##########PARTIE RESERVEE AU RESPONSIVE */
+@media screen and (max-width:1270px){
+    .contener{
+       display: flex;
+      margin: 0 auto;
+      align-items: center;
+justify-content: center;
+       flex-direction: column;
+
+    }
+    .contener-box{
+        margin: 0 auto;
+        justify-content: center;
+        align-items: center;
+    }
+    .already-text{
+        /* margin-top: 100px; */
+        /* padding-top: 20px; */
+        margin-left: 200px;
+    }
+   
+        #fifth-section .img3{
+            left: 10%;
+            top:60%;
+            cursor: pointer;
+            position: absolute;
+        
+     
+        }
+        #fifth-section .img1{
+            position: absolute;
+            top: 23%;
+            left: 8%;
+        }
+
+}
+
+@media screen and (max-width:1200px){
+    #fifth-section .img2{
+        position: absolute;
+        right: 5%;
+        height: 120px;
+        width: 120px;
+    }   
+    #fifth-section .img3{
+        left: 5%;
+        top:60%;
+        cursor: pointer;
+        position: absolute;
+    
+ 
+    }
+    #fifth-section .img1{
+        height: 140px;
+              width: 140px;
+          }   
+}
+@media screen and (max-width:1170px){
+    .parents-footer{
+        display: flex;
+        flex-direction: column;
+    }
+    footer{
+        position: relative;
+    }
+    .icone{
+        bottom:0px;
+        position: absolute;
+    }
+}
+@media screen and (max-width:1170px){
+    .contenaire{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+}
+@media screen and (max-width:990px){
+    .icone{
+         flex-direction: column;
+          display: flex;
+          padding-bottom: 10px;
+
+    }
+    }
+    @media screen and (max-width:900px){
+        /* .circle{
+          position: absolute;
+          right: 20px;
+        }
+        header{
+            position: relative;
+        } */
+    }
+    @media screen and (max-width:730px){
+        #home h4 .text{
+    border: none;
+     }
+    }
+
+    @media screen and (max-width:660px){
+        .contener-box{
+            padding-right: 10px;
+            margin: 0 auto;
+        }
+    }
+    @media screen and (max-width:545px){
+       .contenaire p{
+        height: 200px;
+        overflow: auto;
+       }
+       .contenaire img{
+        width: 90%;
+       }
+    }
